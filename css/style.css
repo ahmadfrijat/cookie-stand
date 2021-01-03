@@ -1,0 +1,48 @@
+html { 
+    background: url("https://images.creativemarket.com/0.1.0/ps/1454556/300/200/m2/fpc/wm0/ablqoshleofzfi3rk6ecev2mvpjyt2wqnkouwsx6xeucu6rrvkemkbfjzhtahj8a-.jpg?1468568828&s=2a415535646f8c61ad066c3e843736f7") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+ul  {
+    
+    font-family: 'Dokdo', cursive;
+    color: rgb(233, 134, 22);
+    background-color: burlywood;
+    font-size: 25px;
+    width: 300px;
+    border: 2px solid rgb(218, 154, 94);
+    padding: 50px;
+    margin: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 
+  
+}
+h2{
+    background-color: burlywood;
+    text-align: center;
+    font-family: 'Dokdo', cursive;
+    color: rgb(230, 87, 87);
+    font-size: 40px;
+    width: 300px;
+    border: 2px solid rgb(218, 154, 94);
+    padding: 50px;
+    margin: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li {
+    background-color: brown;
+    border: 2px solid darkblue;
+    padding: 25px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
