@@ -6,43 +6,41 @@ html {
     background-size: cover;
   }
 
-ul  {
-    
+
+
+table  {
+   
+    font-size: 50px;
     font-family: 'Dokdo', cursive;
-    color: rgb(233, 134, 22);
     background-color: burlywood;
-    font-size: 25px;
-    width: 300px;
-    border: 2px solid rgb(218, 154, 94);
-    padding: 50px;
-    margin: 2px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
- 
-  
+    margin: 20px;
+    margin-top: 200px;
+   
+
 }
-h2{
-    background-color: burlywood;
+th  {
+    color:burlywood ;
+    font-size: 25px;
+    font-family: 'Dokdo', cursive;
+    background-color: brown;
+    border: 2px rgb(245, 40, 33);
+    column-width: 300px;
+    
+}
+tr  {
+    background-color:brown ;
     text-align: center;
     font-family: 'Dokdo', cursive;
-    color: rgb(230, 87, 87);
+    color: burlywood;
     font-size: 40px;
-    width: 300px;
+    width: 200px;
     border: 2px solid rgb(218, 154, 94);
     padding: 50px;
     margin: 2px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+   
 
-ul li {
+}
+td {
     background-color: brown;
-    border: 2px solid darkblue;
-    padding: 25px;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    color: burlywood;
 }
