@@ -1,4 +1,9 @@
+//========================================================================================================================
+// VAIRIABLS AND DATA 
+//=========================================================================================================================
 
+
+// creat constructor function to the cookie stand project:
 
 var Shop = function (max, min, average, hourlySales, dailySales, location) {
 
@@ -20,23 +25,26 @@ var dubai = new Shop(38, 11, 3.7, [], 0, 'Dubai');
 var paris = new Shop(38, 20, 2.3, [], 0, 'Paris');
 var lima = new Shop(16, 2, 4.6, [], 0, 'Lima');
 
+// pushing all shops :
 var allShops = [];
 allShops.push(seattle, tokyo, dubai, paris, lima)
 
 
 
+
+//========================================================================================================================
+// FUNCTIONALITY
+//=========================================================================================================================
+
+
+// calculating random num :
 Shop.prototype.randomCust = function () {
 
   return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
 };
-seattle.randomCust()
-tokyo.randomCust()
-dubai.randomCust()
-paris.randomCust()
-lima.randomCust()
 
 
-
+// calculating hourly daily sales :
 Shop.prototype.hourlyDailySales = function () {
 
   for (var i = 0; i < hour.length; i++) {
@@ -45,11 +53,7 @@ Shop.prototype.hourlyDailySales = function () {
     this.dailySales += numOfCookies;
   }
 };
-seattle.hourlyDailySales()
-tokyo.hourlyDailySales()
-dubai.hourlyDailySales()
-paris.hourlyDailySales()
-lima.hourlyDailySales()
+
 
 
 
@@ -79,65 +83,80 @@ Shop.prototype.render = function () {
 };
 
 
-seattle.render()
+
 
 
 Shop.prototype.render1 = function () {
-var firRow2 = document.createElement('tr');
-firRow2.textContent = this.location;
-table.appendChild(firRow2);
-for (var i = 0; i < hour.length; i++) {
-     var secRow2 = document.createElement('th');
-     secRow2.textContent = this.hourlySales[i];
-     firRow2.appendChild(secRow2);
+  var firRow2 = document.createElement('tr');
+  firRow2.textContent = this.location;
+  table.appendChild(firRow2);
+  for (var i = 0; i < hour.length; i++) {
+    var secRow2 = document.createElement('th');
+    secRow2.textContent = this.hourlySales[i];
+    firRow2.appendChild(secRow2);
 
+  }
+  var dailyLocationTotal = document.createElement('th')
+  dailyLocationTotal.textContent = this.dailySales;
+  firRow2.appendChild(dailyLocationTotal)
 }
-var dailyLocationTotal = document.createElement('th')
-dailyLocationTotal.textContent = this.dailySales;
-firRow2.appendChild(dailyLocationTotal)
-}
-
-seattle.render1()
-tokyo.render1()
-dubai.render1()
-paris.render1()
-lima.render1()
 
 
-
-Shop.prototype.total = function(){
+Shop.prototype.total = function () {
   var trElement = document.createElement('tr');
   var tdElement = document.createElement('td');
   tdElement.textContent = 'Total';
   trElement.appendChild(tdElement);
 
+  // calculatin total hourly sales :
   var grandTotal = 0;
-
-  
   for (var i = 0; i < hour.length; i++) {
-    
+
     var hourlyCounter = 0;
-    
+
     for (var store = 0; store < allShops.length; store++) {
       hourlyCounter += allShops[store].hourlySales[i];
     }
 
     tdElement = document.createElement('td');
-    
+
     tdElement.textContent = hourlyCounter;
     trElement.appendChild(tdElement);
     grandTotal = hourlyCounter += grandTotal;
 
 
   }
- 
+
   tdElement = document.createElement('td');
   tdElement.textContent = grandTotal;
   trElement.appendChild(tdElement);
-  
+
   table.appendChild(trElement);
 
 }
 
+//========================================================================================================================
+// FUNCTION calling
+//=========================================================================================================================
+for (i = 0; i < allShops.length; i++) {
+
+  allShops[i].hourlyDailySales();
+
+}
+
+
+
+seattle.render()
+
+for (i = 0; i < allShops.length; i++) {
+
+  allShops[i].render1();
+
+}
 
 seattle.total()
+
+
+
+
+
