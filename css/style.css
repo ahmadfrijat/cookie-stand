@@ -44,3 +44,42 @@ td {
     background-color: brown;
     color: burlywood;
 }
+header{
+
+    background-color: brown;
+    margin: auto;
+    text-align: left;
+    float: left;
+    width:100% ;
+    margin-bottom: 50px ;
+    padding-left: 30px;
+}
+.a{
+    width:25% ;
+    color: brown;
+    background-color: burlywood;
+    text-align: center;
+    font-size: 50px;
+}
+.div{
+    background-color: brown;
+    text-align: left;
+    float: left;
+    margin-top: 50px;
+    color: burlywood;
+    font-size: 25px;
+    font-family: 'Dokdo', cursive;
+    padding-left: 30px;
+    width: 700px;
+}
+a:hover {
+    background-color: yellow;
+  }
+  img{
+    position: absolute;
+    left: 1000px;
+    top: 180px;
+    z-index: -1;
+    width:400px ;
+    height: 400px;
+  }
