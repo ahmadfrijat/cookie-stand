@@ -135,6 +135,27 @@ Shop.prototype.total = function () {
 
 }
 
+
+let form = document.getElementById('add-new-location') 
+
+
+form.addEventListener('submit', function (event){
+
+  event.preventDefault() ;
+  let max = event.target.max.value; 
+  let min = event.target.min.value; 
+  let average = event.target.average.value; 
+  let location = event.target.location.value; 
+  
+  let newShop = new Shop(max,min,average,[],0,location) ;
+  allShops.push(newShop) ;
+  newShop.hourlyDailySales();
+  newShop.render1();
+  table.deleteRow(allShops.length)
+  newShop.total();
+});
+
+
 //========================================================================================================================
 // FUNCTION calling
 //=========================================================================================================================
@@ -155,8 +176,6 @@ for (i = 0; i < allShops.length; i++) {
 }
 
 seattle.total()
-
-
 
 
 
