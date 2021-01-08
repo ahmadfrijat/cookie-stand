@@ -5,37 +5,43 @@ html {
     -o-background-size: cover;
     background-size: cover;
   }
+
+  *{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+  }
 fieldset{
     font-size: 30px;
-    font-family: 'Dokdo', cursive;
-    background-color: brown;
+    
     color: burlywood;
+    background-color: rgb(223, 178, 111);
 }
 
 
 table  {
    
     font-size: 50px;
-    font-family: 'Dokdo', cursive;
-    background-color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: firebrick;
     margin: 20px;
     margin-top: 200px;
    
 
 }
 th  {
-    color:burlywood ;
+    color: darkorange;
     font-size: 25px;
-    font-family: 'Dokdo', cursive;
-    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
     border: 2px rgb(245, 40, 33);
     column-width: 300px;
-    
+    background-color: lightsalmon;
 }
 tr  {
-    background-color:brown ;
+    background-color:rgb(110, 6, 6) ;
     text-align: center;
-    font-family: 'Dokdo', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: burlywood;
     font-size: 40px;
     width: 200px;
@@ -48,6 +54,7 @@ tr  {
 td {
     background-color: brown;
     color: burlywood;
+    background-color:rgb(110, 6, 6) ;
 }
 header{
 
@@ -61,31 +68,39 @@ header{
 }
 .a{
     width:25% ;
-    color: brown;
+   
     background-color: burlywood;
     text-align: center;
     font-size: 50px;
 }
 .div{
-    background-color: brown;
+    background-color: rgb(223, 178, 111);
     text-align: left;
     float: left;
-    margin-top: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
     color: burlywood;
     font-size: 25px;
-    font-family: 'Dokdo', cursive;
     padding-left: 30px;
-    width: 700px;
-    margin-right: 0px;
+    width: 50%;
+    margin-left: 400px;
+    margin-right: auto;
+    display: block;
 }
 a:hover {
     background-color: yellow;
   }
   img{
-    position: absolute;
+    margin-bottom: auto;
     left: 600px;
-    top: 180px;
-    z-index: -1;
-    width:900px ;
-    height: 500px;
+    width:100% ;
+    margin-top: auto;
+  }
+  p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  a{
+    font-family: 'EB Garamond', serif;
+    font-family: 'Montserrat', sans-serif; 
+    color: darkblue;
   }
